@@ -1,0 +1,61 @@
+.body{
+    margin: 0px;
+    padding: 0;
+    
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap'); *{ margin: 0; padding: 0; box-sizing: border-box; } body{ display: flex; justify-content: center; align-items: center; height: 100vh; background: #050801; font-family: 'Raleway', sans-serif; font-weight: bold; } a{ padding: 15px 30px; color: #03e9f4; text-decoration: none; text-transform: uppercase; transition: 0.4s all ease-in; letter-spacing: 4px; overflow: hidden; border:2px solid #03e9f4; } a:hover{ background: #03e9f4; color: #050801; box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4; -webkit-box-reflect:below 1px linear-gradient(transparent, #0005); }
+
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+
+
+css
+
+/* GLOBAL STYLES */
+body {
+
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15px solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
+.typewriter{
+    position: absolute;
+    top: 46%;
+}
