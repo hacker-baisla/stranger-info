@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Surprise My Baby</title>
+    
+<style>
+    *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #061519;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 400px;
+}
+
+.card-content {
+  position: relative;
+  padding: 15rem 5rem;
+  transform-style: preserve-3d;
+  transition: transform 3s;
+}
+.card:hover .card-content {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  color: white;
+}
+.card-front {
+  background-image: url(image/hacker.jpg);
+  background-color: rgba(255, 163, 42, 0.2);
+  align-items: center;
+}
+.card-front::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  border: 3px solid yellow;
+  transform: translateZ(2rem);
+}
+.title {
+  font-family: "Teko", sans-serif;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  line-height: 120%;
+  transform: translateZ(4.4rem);
+}
+.sub-title {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transform: translateZ(3rem);
+}
+
+.card-back {
+  background-image: url("image/twins.jpg");
+  transform: rotateY(180deg);
+  gap: 0.5rem;
+  color: #3bff00;
+}
+.back-title {
+  font-family: "Teko", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #3bff00;
+  text-transform: uppercase;
+  align-self: center;
+  transform: translateZ(2rem);
+  background: black;
+  border: 3px solid #3bff00;
+  box-shadow: 0px 0px 10px #3bff00;
+}
+
+.card-back span {
+  font-weight: 600;
+  color: red;
+}
+.btn {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 2.2rem;
+  color: #3bff00;
+  border: 2px solid #3bff00;
+  text-align: center;
+  align-self: center;
+  margin-top: 1rem;
+  transform: translateZ(2rem);
+  transition: 0.3s ease;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px #3bff00;
+}
+.btn:hover {
+  color: red;
+  border: 2px solid red;
+  box-shadow: 0 0 10px red;
+}
+                                        
+
+
+
+</style>
+</head>
+<body style="background: black;">
+    
+    
+    <div class="card">
+      <div class="card-content">
+        <div class="card-front">
+          <p class="sub-title">It's JD</p>
+          <h1 class="title">THE CyBER CRIMINAL</h1>
+          <p class="sub-title">Click On The Picture</p>
+        </div>
+
+        <div class="card-back">
+          <div class="back-title">&nbsp;Haa! haa! haa!&nbsp;</div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="movie-description" style="text-shadow:0 0 5px black">
+            <span>NOTICE: </span>Hey! My cute baby you are Hacked⚠️ by <mark>JD THE CyBER CRIMINAL</mark>, dont worry i will not harm you and your data just relax👻
+          </div>
+          <div class="genre">
+            <span>LISTEN: </span> 😘😘😉
+          </div>
+          <div class="release-date">
+            <span>OWNER: </span>THE CyBER CRIMINAL
+          </div>
+          <a href="https:instagram.com/jd_the_cyber_criminal_" class="btn">Contact Us</a>
+    
+    
+</body>
+</html>
